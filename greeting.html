@@ -58,11 +58,13 @@
     var greet;
 
     if (hrs < 12)
-        greet = '☀︎ Good Morning, Ruby ✨';
+        greet = 'Good Morning, Ruby ✨';
     else if (hrs >= 12 && hrs <= 17)
-        greet = '☁︎ Good Afternoon, Ruby ✨';
-    else if (hrs >= 17 && hrs <= 24)
-        greet = '☾ Good Evening, Ruby ✨';
+        greet = 'Good Afternoon, Ruby ✨';
+    else if (hrs > 17 && hrs <= 22)
+        greet = 'Good Evening, Ruby ✨';
+    else if (hrs > 22 && hrs <= 06)
+        greet = 'Good Night, Ruby ✨';
 
     document.getElementById('lbl').innerHTML = `
         <div class="container">
